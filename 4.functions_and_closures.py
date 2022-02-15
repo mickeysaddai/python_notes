@@ -13,7 +13,7 @@
 
 
 
-#we can do similar in python
+# we can do similar in python
 def greeting_maker(salutation):
     def greeting(name):
         return f'{salutation} {name}'
@@ -24,3 +24,4 @@ hiya = greeting_maker("Hiya")
 
 print(hello("mickey"))
 print(hiya("mickey"))
+
