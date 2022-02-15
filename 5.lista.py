@@ -24,7 +24,7 @@ print("mickey removed", friends)
 friends.sort()
 print("sorted", friends)
 
-friends.sort(key=str.lower) #sort by lowercase else uppercase will alwauys come before lowercase
+friends.sort(key=str.lower) #sort by lowercase else uppercase will always come before lowercase
 print(friends)
 
 
