@@ -1,5 +1,6 @@
 # immutable
 # min, max
+#cannot append, remove or sort in place
 
 
 from curses import use_default_colors
@@ -54,3 +55,12 @@ print(minmax(myNums))
 (lowest, highest) = minmax(myNums) #you can assign the tuple into separate variables
 print(lowest)
 print(highest)
+
+
+# tuple of just a single item
+
+empty = ()
+print(empty)
+
+single = (1, ) #without adding the comma, it just prints the single digit 1
+print(single)
