@@ -43,3 +43,20 @@ print(set(basket))
 purchasingEmails = ['mickgmail.com', "tim@gmail.com", "jaz@gmail.com"]
 helpEmails = ['bengmail.com', "tim@gmail.com", "junior@gmail.com"]
 print(set(purchasingEmails) & set(helpEmails))  # {'tim@gmail.com'}
+
+
+# combining data structures
+posts = [
+    {"title": "ALL About Lists", "tags":("fun", "informatiVe", "lists")},
+    {"title": "Tuple", "tags":("fun", "tuples")},
+    {"title": "Sparkling sETS", "tags":("informative", "numbers")}
+]
+
+allTags = []
+for i in range(len(posts)):
+    print(posts[i]["tags"])
+    allTags.extend(posts[i]["tags"])
+print(allTags)
+allTags = list(set(allTags)) #set removes duplicate and list converts it back into the array without the duplicate
+allTags.sort()
+print((allTags))
